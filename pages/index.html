@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+h2
+{
+    text-align: center;
+}
+
+body{
+    background-color:#436850;
+}
+
+form
+{
+    background-color: #F6F5F5;
+}
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h2> Sign up using below registration Form</h2>
+    </div>
+
+    <div class="body">
+        <form action="/submit" method="post">
+        <fieldset>
+        <div class="form">
+        <div class="field">
+        <label for="name">Name</label>
+        <input type="text" name="name" autocomplete="off">
+        </div>
+
+        <div class="field">
+        <label for="age">Age</label>
+        <input type="text" name="age" placeholder="only numbers">
+        </div>
+
+        <div class="field">
+        <label for="email">Email</label>
+        <input type="text" name="email">
+        </div>
+
+        <div class="field">
+        <label for="qualification">Recent Qualification</label>
+        <select name="qualification">
+            <option value="#" hidden>choose here</option>
+            <option value="">high school diploma or lower</option>
+            <option value="">senior school diploma</option>
+            <option value="">undergraduate degree</option>
+            <option value="">masters degree or higher</option>
+        </select>
+        </div>
+
+        <div class="field">
+        <label for="phone">Phone number</label>
+        <input type="text" name="number" placeholder="only numbers">
+        </div>
+
+        <input type="submit">
+    </div>
+    </fieldset>
+    </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
